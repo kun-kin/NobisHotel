@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NobisHotel</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+    <link rel="stylesheet" href="./lib/css/style.css">
+
+</head>
+
+<body class="home">
+    <div class="wrapper" id="">
+        <header class="header">
+            <div class="container">
+                <a href="./index.html">
+                    <img src="./images/logo.png" data-src="./images/logo.png" alt="" class="logo lazyloaded" loading="lazy">
+                </a>
+                <div class="navbars">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 16" enable-background="new 0 0 25 16" xml:space="preserve" class="icon icon-bars">
+                        <rect width="25" height="2"></rect>
+                        <rect y="7" width="25" height="2"></rect>
+                        <rect y="14" width="25" height="2"></rect>
+                    </svg>
+                </div>
+                <a href="javascript:;" class="language btn-toggle-slide" data-toggle=".header .languages">
+                    <img src="./images/en.svg" alt="" loading="lazy">
+                </a>
+                <div class="icons"></div>
+                <div class="elements">
+                    <div class="close">
+                        <a href="javascript:;"></a>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class="icon icon-close">
+                            <g>
+                                <g>
+                                    <path d="M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249
+                        C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306
+                        C514.019,27.23,514.019,14.135,505.943,6.058z"></path>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636
+                        c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="navigation">
+                        <ul class="pages">
+                            <li class="level-1">
+                                <a href="./rooms.html" class="" data-slug="room-suites" data-uri="room-suites">Room
+                                    &amp; Suites</a>
+                            </li>
+
+                            <li class="level-1">
+                                <a href="./restaurant.html" class="" data-slug="restaurant" data-uri="restaurant">Restaurant NOI</a>
+                            </li>
+                            <li class="level-1">
+                                <a href="./bar.html" class="" data-slug="bar" data-uri="bar">The Marble Bar</a>
+                            </li>
+                            <li class="level-1">
+                                <a href="./meeting.html" class="" data-slug="meeting" data-uri="meeting">Meeting</a>
+                            </li>
+                            <li class="level-1">
+                                <a href="./event.html" class="" data-slug="event" data-uri="event">Event</a>
+                            </li>
+                            <li class="level-1">
+                                <a href="./services.html" class="" data-slug="services" data-uri="services">Services</a>
+                            </li>
+                            <li class="level-1">
+                                <a href="./specials.html" class="" data-slug="specials" data-uri="specials">Specials</a>
+                            </li>
+                            <li class="level-1">
+                                <a href="./about.html" class="" data-slug="about-us" data-uri="about-us">About us</a>
+                            </li>
+                            <li class="level-1">
+                                <a href="./gallery.html" class="" data-slug="gallery" data-uri="gallery">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="toolbar">
+                        <a href="" class="btn btn-sm primary ">Book a room</a>
+                        <a href="#" class="btn btn-sm primary " data-anchor="open">Book a table</a>
+                        <a href="" class="btn btn-sm primary "> Book a meeting </a>
+                        <a href="https://www.nobishotel.dk/event/event-request" class="btn btn-sm primary "> Book an
+                            event </a>
+                        <a href="javascript:;" class="btn btn-xs btn-language btn-toggle-slide" data-toggle=".header .languages">
+                            <div class="flag" style="background-image: url('./images/en.svg');"></div> English
+                        </a>
+                    </div>
+                </div>
+                <div class="languages">
+                    <a href=""><img src="./images/en.svg" alt="" loading="lazy"> English</a>
+                    <a href=""><img src="./images/da.svg" alt="" loading="lazy"> Dansk</a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="rooms block-text-heading">
+                <div class="container">
+                    <div class="row center-lg center-md center-sm center-xs">
+                        <div class="col-lg-8 col-md-10">
+                            <h1 class="heading">Room & Suites</h1>
+                            <div class="text-format">
+                                <p>
+                                    We love contemporary design and architecture, but we also like the classic and the timeless. Aiming for that personal care and sense of quality, we have tried to create an environment where you feel that there is an authentic soul and attention to the
+                                    smallest detail.
+                                </p>
+                                <p>
+                                    The interior is designed in co-operation with the Swedish star architect Gert Wingårdh, to create our concept of contemporary five-star luxury - elegant and timeless, superior comfort with first-class service, but also personalized, sharp and updated
+                                    in every detail.
+                                </p>
+                            </div>
+                            <div class="buttons">
+                                <a href="#suite" class="btn primary btn-md">Suite</a>
+                                <a href="#deluxe" class="btn primary btn-md">Deluxe</a>
+                                <a href="#superior" class="btn primary btn-md">Superior</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-rooms">
+                <div class="block-list">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="group">
+                                    <div class="heading">
+                                        <h3 id="suite">Suite</h3>
+                                        <i class="fa-regular fa-user icon"></i>
+                                        <p>1-4 persons</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="image">
+                                            <div class="img ">
+                                                <img src="./images/room1.jpg" alt="" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="links">
+                                            <div class="wrapper">
+                                                <div class="buttons">
+                                                    <a href="./detail-room.html" class="btn title">Nobis Suite</a>
+                                                    <a href="" target="_blank" class="btn">Book now</a>
+                                                    <a href="./detail-room.html" class="btn">Read more</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="image">
+                                            <div class="img ">
+                                                <img src="./images/room2.jpg" alt="" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="links">
+                                            <div class="wrapper">
+                                                <div class="buttons">
+                                                    <a href="./detail-room.html" class="btn title">Penthouse Suite</a>
+                                                    <a href="" target="_blank" class="btn">Book now</a>
+                                                    <a href="./detail-room.html" class="btn">Read more</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="image">
+                                            <div class="img ">
+                                                <img src="./images/room3.jpg" alt="" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="links">
+                                            <div class="wrapper">
+                                                <div class="buttons">
+                                                    <a href="./detail-room.html" class="btn title">Junior Suite</a>
+                                                    <a href="" target="_blank" class="btn">Book now</a>
+                                                    <a href="./detail-room.html" class="btn">Read more</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="heading">
+                                        <h3 id="deluxe">DELUXE</h3>
+                                        <i class="fa-regular fa-user icon"></i>
+                                        <p>1-4 persons</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="image">
+                                            <div class="img ">
+                                                <img src="./images/room1.jpg" alt="" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="links">
+                                            <div class="wrapper">
+                                                <div class="buttons">
+                                                    <a href="./detail-room.html" class="btn title">Nobis Suite</a>
+                                                    <a href="" target="_blank" class="btn">Book now</a>
+                                                    <a href="./detail-room.html" class="btn">Read more</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="image">
+                                            <div class="img ">
+                                                <img src="./images/room2.jpg" alt="" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="links">
+                                            <div class="wrapper">
+                                                <div class="buttons">
+                                                    <a href="./detail-room.html" class="btn title">Penthouse Suite</a>
+                                                    <a href="" target="_blank" class="btn">Book now</a>
+                                                    <a href="./detail-room.html" class="btn">Read more</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="image">
+                                            <div class="img ">
+                                                <img src="./images/room3.jpg" alt="" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="links">
+                                            <div class="wrapper">
+                                                <div class="buttons">
+                                                    <a href="./detail-room.html" class="btn title">Junior Suite</a>
+                                                    <a href="" target="_blank" class="btn">Book now</a>
+                                                    <a href="./detail-room.html" class="btn">Read more</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="links">
+                <div class="container">
+                    <h5>More from Nobis Hotel</h5>
+                    <ul class="map">
+                        <li class="level-1">
+                            <a href="https://www.nobishotel.dk/">Hotel</a>
+                            <ul>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/room-suites">Room &amp; Suites</a></li>
+                                <li class="level-2">
+                                    <a href="https://nobishotel.dk/#/booking/step-1">Book a room</a></li>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/gallery">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="level-1">
+                            <a href="https://www.nobishotel.dk/restaurant-noi">Restaurant</a>
+                            <ul>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/restaurant-noi">Restaurant NOI</a></li>
+                                <li class="level-2">
+                                    <a href="#" data-anchor="open">Book a table</a></li>
+                            </ul>
+                        </li>
+                        <li class="level-1">
+                            <a href="https://www.nobishotel.dk/the-marble-bar">Bar &amp; Lounge</a>
+                            <ul>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/the-marble-bar">Marble Bar</a></li>
+                                <li class="level-2">
+                                    <a href="#">Cocktail Menu</a></li>
+                                <li class="level-2">
+                                    <a href="#">Eat at the bar?</a></li>
+                            </ul>
+                        </li>
+                        <li class="level-1">
+                            <a href="https://www.nobishotel.dk/meeting">Meeting</a>
+                            <ul>
+                                <li class="level-2">
+                                    <a href="">Our meeting rooms</a></li>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/meeting/meeting-request">Send a request</a></li>
+                            </ul>
+                        </li>
+                        <li class="level-1">
+                            <a href="https://www.nobishotel.dk/event">Events</a>
+                            <ul>
+                                <li class="level-2">
+                                    <a href="">Our event spaces</a></li>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/event/event-request">Send request</a></li>
+                            </ul>
+                        </li>
+                        <li class="level-1">
+                            <a href="https://www.nobishotel.dk/about-us">Nobis Hotel Copenhagen</a>
+                            <ul>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/about-us/find-us">Find us</a></li>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/about-us/contact-us">Contact us</a></li>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/about-us/work-with-us">Work with us</a></li>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/about-us/privacy-policy">Privacy policy</a></li>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/about-us/cookie-policy">Cookie policy</a></li>
+                                <li class="level-2">
+                                    <a href="https://www.nobishotel.dk/about-us/terms-of-use">Terms of use</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="site">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg col-md col-sm-6 col-xs-12 text-format">
+                            <h5>About us</h5>
+                            <p>Nobis Hotel Copenhagen<br>
+                                <br> Niels Brocks Gade 1<br>
+                                <br> 1574 København V</p>
+                            <br>
+                            <a href="" class="icon">
+                                <div class="dot">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>Find us</div>
+                            </a>
+                        </div>
+                        <div class="col-lg col-md col-sm-6 col-xs-12 text-format">
+                            <h5>Contact</h5>
+                            <p>
+                                <a href="tel:+4578741400">+45 787 414 00</a><br> <a href="mailto:reservations@nobishotel.dk">reservations@nobishotel.dk</a></p>
+                        </div>
+                        <div class="col-lg col-md col-sm-6 col-xs-12 text-format">
+                            <h5>Book online</h5>
+                            <p>
+                                <a href="">Book a room</a>
+                                <br>
+                                <a href="#" data-anchor="open">Book a table</a><br> <a href="">Book a meeting</a>
+                                <br>
+                                <a href="">Book an event</a><br></p>
+                        </div>
+                        <div class="col-lg col-md col-sm-6 col-xs-12 text-format">
+                            <h5>Follow us</h5>
+                            <a href="" class="icon" target="_blank">
+                                <div class="dot">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                Facebook
+                            </a>
+                            <a href="" class="icon" target="_blank">
+                                <div class="dot">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nobis-collection">
+                <div class="nobis">
+                    <img src="./images/logo.png" alt="" loading="lazy">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis1.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis2.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis3.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis4.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis5.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis6.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis7.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis8.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis9.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis10.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis11.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 col-xs-4">
+                            <div class="image">
+                                <img src="./images/nobis12.png" alt="" class="img-responsive lazyloaded" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="#" class="scrollup">
+        <i class="fa-sharp fa-solid fa-angle-up"></i>
+    </a>
+
+    <script src="./lib/js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./lib/js/slide.js"></script>
+    <script src="./lib/js/style.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

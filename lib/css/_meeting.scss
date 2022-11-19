@@ -1,0 +1,225 @@
+.block-table {
+    h5 {
+        margin-bottom: 25px;
+        overflow: hidden;
+        text-align: center;
+        color: #687172;
+        text-transform: uppercase;
+        &::before,
+        &::after {
+            background-color: #eee;
+            content: "";
+            display: inline-block;
+            height: 1px;
+            position: relative;
+            vertical-align: middle;
+            width: 50%;
+        }
+        &::before {
+            right: .5em;
+            margin-left: -50%;
+        }
+        &::after {
+            left: .5em;
+            margin-right: -50%;
+        }
+    }
+    table {
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+        th,
+        td {
+            padding: 10px 6px;
+        }
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    background-color: #eee;
+                }
+            }
+        }
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+    min-height: .01%;
+}
+
+//meeting-request
+.block-form {
+    background: #abb6b5;
+    color: #333;
+    .form {
+        text-align: left;
+        padding: 50px;
+        &-label {
+            font-size: 14px;
+            padding-bottom: 4px;
+            display: block;
+            margin-bottom: 0;
+        }
+        @media(max-width:767.98px) {
+            padding: 25px;
+        }
+    }
+}
+
+.form {
+    input[type=number],
+    input[type=email],
+    input[type=password],
+    input[type=tel],
+    input[type=text],
+    select,
+    textarea {
+        background: #fff;
+        color: #333;
+        @media(max-width: 767.98px) {
+            padding: 12px 16px;
+            &.form-control {
+                padding: 12px 16px;
+            }
+        }
+    }
+}
+
+select.form-control {
+    padding: 16px 20px;
+}
+
+.form-control {
+    height: auto;
+    border-radius: 0;
+}
+
+.form-control[readonly] {
+    background-color: #fff;
+}
+
+.page-text .block-bottom-margin {
+    margin-bottom: 40px;
+}
+
+.page-event,
+.page-events {
+    margin-bottom: 80px;
+    .wrapper-event {
+        padding-bottom: 80px;
+    }
+    .grid {
+        &-item {
+            position: relative;
+            padding-bottom: 20px;
+            .below {
+                padding-top: 10px;
+                h4 {
+                    color: #687172;
+                    font-size: 24px;
+                }
+            }
+            &:hover {
+                .below {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .wrapper-event {
+        position: relative;
+        overflow: hidden;
+        background: #abb6b5;
+    }
+}
+
+.page-event {
+    .box {
+        background: #fff;
+        padding: 40px 40px 80px 40px;
+        position: relative;
+        h1 {
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #687172;
+            @media(max-width: 767.98px) {
+                margin-bottom: 20px;
+                font-size: 22px;
+            }
+        }
+        .text-format {
+            p {
+                text-align: center;
+            }
+        }
+        .btn {
+            margin-top: 20px;
+        }
+        @media(min-width: 1240px) {
+            margin: -40px auto 0 auto;
+            width: 90%;
+            z-index: 2;
+        }
+        @media(max-width:767.98px) {
+            padding: 40px 20px;
+        }
+    }
+    .events {
+        margin: 80px 0 40px 0;
+        .heading {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.block-image-link {
+    position: relative;
+    &>.container {
+        position: relative;
+    }
+    .heading {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        left: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: brownregular, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        @media(min-width: 768px) and (max-width: 991.98px) {
+            font-size: 32px;
+            left: 10px;
+        }
+        @media(max-width: 767.98px) {
+            font-size: 20px;
+            left: 10px;
+        }
+    }
+    .box {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        left: 50%;
+        background: #687172;
+        opacity: .8;
+        @media(min-width: 768px) and (max-width: 991.98px) {
+            left: 10px;
+        }
+        @media(max-width: 767.98px) {
+            right: 0;
+            left: 0;
+        }
+    }
+}

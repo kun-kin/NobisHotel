@@ -1,0 +1,305 @@
+@font-face {
+    font-family: MercuryTextG1-Roman;
+    src: url('../font/MercuryTextG1-Roman.woff');
+}
+
+@font-face {
+    font-family: brownregular;
+    src: url('../font/FontsFree-Net-Brown-Regular-Regular.ttf');
+}
+
+#worker_1 {
+    display: none
+}
+
+@import "header";
+@import "main";
+@import "footer";
+@import "rooms";
+@import "restaurant";
+@import "meeting";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+// ::-webkit-scrollbar {
+//     width: 5px;
+// }
+// ::-webkit-scrollbar-track {
+//     background: #f1f1f1;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background: #a3258e;
+// }
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #555;
+// }
+:root {
+    --primary-color: #0e6000;
+    --red-color: #ed1c24;
+}
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    font-family: MercuryTextG1-Roman, Georgia, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #687172;
+    margin: 0;
+}
+
+.ov-hidden {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.container {
+    @media(min-width: 1200px) {
+        max-width: 1200px;
+    }
+    @media(max-width:768px) {
+        max-width: 100%;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-family: brownregular, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: inherit;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 35px;
+    @media(max-width: 767.98px) {
+        font-size: 28px;
+    }
+}
+
+h2 {
+    font-size: 28px;
+    @media(max-width: 767.98px) {
+        font-size: 23px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    @media(max-width: 767.98px) {
+        font-size: 20px;
+    }
+}
+
+h5 {
+    font-size: 16px;
+    @media(max-width: 767.98px) {
+        font-size: 13px;
+    }
+}
+
+a {
+    color: #333;
+    outline: 0;
+    text-decoration: none;
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+p {
+    @media(max-width: 767.98px) {
+        font-size: 15px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn,
+a.btn,
+a.btn-inline,
+input.btn,
+span.btn-inline a {
+    display: inline-block;
+    font-family: brownregular, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border: 0;
+    background: 0 0;
+    color: inherit;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn.primary,
+a.btn-inline.primary,
+a.btn.primary,
+input.btn.primary,
+span.btn-inline a.primary {
+    color: #fff;
+    background: #687172;
+    &:hover {
+        background-color: #61696a;
+    }
+}
+
+.btn.btn-sm,
+a.btn-inline.btn-sm,
+a.btn.btn-sm,
+input.btn.btn-sm,
+span.btn-inline a.btn-sm {
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.btn.btn-xs,
+a.btn-inline.btn-xs,
+a.btn.btn-xs,
+input.btn.btn-xs,
+span.btn-inline a.btn-xs {
+    padding: 6px 15px;
+    font-size: 12px;
+}
+
+.btn.btn-md,
+a.btn-inline.btn-md,
+a.btn.btn-md,
+input.btn.btn-md,
+span.btn-inline a.btn-md {
+    padding: 12px 25px;
+    font-size: 18px;
+}
+
+.btn,
+.btn.btn-sm {
+    border-radius: 0;
+}
+
+input,
+select,
+button {
+    &:focus {
+        outline: 0;
+    }
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+select,
+textarea {
+    font-family: MercuryTextG1-Roman, Georgia, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #687172;
+    background: #fff;
+    width: 100%;
+    outline: 0;
+    margin: 0;
+    border: 0;
+    &:focus {
+        outline: 0;
+    }
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text] {
+    padding: 16px 20px;
+}
+
+.col-xs {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.text-format {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: brownregular, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin: 1.2em 0 .67em 0;
+        color: #687172;
+        &.top-align,
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    p {
+        text-align: left;
+        line-height: 1.5em;
+    }
+    ul {
+        margin: 0 0 1em 20px;
+        padding: 0;
+        li {
+            margin-bottom: 15px;
+            font-size: inherit;
+            font-family: inherit;
+            color: inherit;
+        }
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
+.block-heading {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #687172;
+        text-transform: uppercase;
+    }
+}
+
+.col-xs-4 {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+}
